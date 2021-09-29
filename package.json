@@ -1,0 +1,25 @@
+{
+  "name": "i-link_test_for_trainee",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Test task for i-link trainee",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChechelRoman/i-link_test_for_trainee.git"
+  },
+  "author": "Chechel Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChechelRoman/i-link_test_for_trainee/issues"
+  },
+  "homepage": "https://github.com/ChechelRoman/i-link_test_for_trainee#readme",
+  "dependencies": {
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
