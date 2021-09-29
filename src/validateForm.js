@@ -31,6 +31,7 @@ const renderInvalidInput = (state, element) => {
   }
 
   element.classList.add('registration-field__invalid');
+  element.classList.remove('status__fulfilled');
   const errorMessage = document.createElement('span');
   errorMessage.classList.add('field__erorr-message');
   errorMessage.textContent = state.form.errors[element.id];
