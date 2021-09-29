@@ -68,7 +68,7 @@ p {
 /* Profile Styles */
 
 .profile__frame-1 {
-  background-image: url(/images/profile-frame-1.svg);
+  background-image: url(./images/profile-frame-1.svg);
   display: block;
   position: absolute;
   width: 337px;
@@ -76,7 +76,7 @@ p {
 }
 
 .profile__frame-2 {
-  background-image: url(/images/profile-frame-2.svg);
+  background-image: url(./images/profile-frame-2.svg);
   display: block;
   position: absolute;
   width: 337px;
