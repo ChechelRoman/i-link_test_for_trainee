@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">  
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div class="logo header__logo">
+        <a href="#" class="logo__link">
+          <img src="images/logo.svg" alt="logo" class="logo__link-img">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="#profile" class="menu__list-link">Jane Doe</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#about" class="menu__list-link">Tell us about yourself</a>
+          </li>
+          <li class="menu__list-item">
+           <a href="#slider" class="menu__list-link">Slider</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <article class="profile" id="profile">
+    <div class="container">
+      <div class="profile__frame-1"></div>
+      <div class="profile__frame-2"></div>
+      <picture class="little_square_group">
+        <source srcset="images/mobile-rectangles-2.png" media="(max-width: 375px)">
+        <img src="images/photo-group.png" alt="litle squares">
+      </picture>
+      <div class="profile__wrapper">
+        <div class="profile__photo">
+          <img class="profile__img"src="images/photo.jpg" alt="photo">
+        </div>
+        <section class="profile__information">
+          <div class="information__wrapper">
+            <h1 class="profile__name">Jane Doe</h1>
+            <div class="information__details">
+              <div class="label">
+                <strong class="label__key">Date of birth</strong>
+                <span class="label__value">21.04.2001</span>
+              </div>
+              <div class="label">
+                <strong class="label__key">Gender</strong>
+                <span class="label__value">Female</span>
+              </div>
+              <div class="label">
+                <strong class="label__key">Country</strong>
+                <span class="label__value">Corea</span>
+              </div>
+            </div>
+            <h3 class="profile__about">About me</h3>
+            <div class="profile__description">
+              <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="description__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </article>
+
+  <section class="about">
+    <div class="container">
+
+      <div class="about__wrapper">
+        <h2 id="about">Tell us about yourself</h2>
+
+        <div class="form__wrapper">
+          <form class="registration-form" action="POST">
+
+            <div class="registration__first-row">
+              <div class="form__input-name form-field">
+                <label class="field-label" for="name">Your name</label>
+                <input class="input-name registration-field" name="name" id="name" type="text" placeholder="Tell us your name">
+              </div>
+              <div class="form__select-gender form-field">
+                <label class="field-label" for="gender">Your gender</label>
+                <select name="gender" id="gender" class="select-gender registration-field">
+                  <option value="" class="select__placeholder"  hidden>Choose your gender</option>
+                  <option value="male" class="male-option">Male</option>
+                  <option value="female" class="female-option">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="registration__second-row">
+              <div class="form__input-country form-field">
+                <label class="field-label" for="country">Your country</label>
+                <input class="input-country registration-field" id="country" name="country" type="text" placeholder="Where are you from?">
+              </div>
+              <div class="form__input-city form-field">
+                <label class="field-label" for="city">Your city</label>
+                <input class="input-city registration-field" id="city" type="text" name="city" placeholder="Your native city">
+              </div>
+              <div class="form__input-birthday form-field">
+                <label class="field-label" for="dateOfBirth">Your date of birth</label>
+                <input class="input-birthday registration-field" id="dateOfBirth" name="dateOfBirth" type="text" placeholder="dd.mm.yyyy">
+              </div>
+            </div>
+
+            <div class="registration__third-row">
+              <input type="file" name="file-input" id="file-input" multiple accept=".png, .jpg, .jpeg, .pdf">
+              <label for="file-input" class="file-input__label"></label>
+              <label class="file-input__prompt" for="file-input">Proof your identity with some documents</label>
+              <label class="button-secondary" for="file-input">Add document</label>
+              <div class="files__preview"></div>
+            </div>
+
+            <button class="button-primary" type="submit" disabled>Send info</button>
+
+          </form>
+        </div>
+        <picture class="bright_square_group">
+          <source srcset="images/mobile-rectangles-2.png" media="(max-width: 375px)">
+          <img src="/images/bright form group.png" alt="big bright squares">
+        </picture>
+        <img class="pale_square_group" src="/images/pale-form-group.png" alt="big pale squares">
+      </div>
+    </div>
+  </section>
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider__wrapper">
+        <div class="slider-container">
+          <h1 id="slider">Slide this photo</h1>
+          <p class="slider-info">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          <div class="slider-track">
+            <picture class="slider-item" id="image1">
+              <source srcset="images/slide-1-mobile.jpg" media="(max-width: 375px)">
+              <img src="images/slide-1-desktop.jpg" alt="Sea">
+            </picture>
+            <picture class="slider-item" id="image2">
+              <source srcset="images/slide-2-mobile.jpg" media="(max-width: 375px)">
+              <img src="images/slide-2-desktop.jpg" alt="Forest">
+            </picture class="slider-item" id="image3">
+            <picture class="slider-item" id="image3">
+              <source srcset="images/slide-3-mobile.jpg" media="(max-width: 375px)">
+              <img src="images/slide-3-desktop.jpg" alt="Mountains">
+            </picture>
+          </div>
+          <div class="slider-controls">
+            <img src="images/prev-svg.svg" alt="next arrow" class="slide-prev">
+            <img src="images/next-svg.svg" alt="previous arrow" class="slide-next">
+          </div>
+          <div class="slider-btns">
+            <span class="slider-button" id="button1"></span>
+            <span class="slider-button" id="button2"></span>
+            <span class="slider-button" id="button3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./src/index.js" type="module"></script>
+
+</body>
+</html>
