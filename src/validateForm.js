@@ -127,7 +127,7 @@ const renderForm = (state) => {
     sendButton.setAttribute('disabled', '');
 
     const completeIcon = document.createElement('img');
-    completeIcon.setAttribute('src', '/images/complete-icon.svg');
+    completeIcon.setAttribute('src', './images/complete-icon.svg');
     completeIcon.setAttribute('alt', 'Complete icon');
     completeIcon.classList.add('complete-icon');
 

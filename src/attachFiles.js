@@ -36,7 +36,7 @@ const renderPreview = (state, container) => {
 
       const deleteIcon = document.createElement('img');
       deleteIcon.classList.add('delete__item-icon');
-      deleteIcon.setAttribute('src', '/images/delete-icon.svg');
+      deleteIcon.setAttribute('src', './images/delete-icon.svg');
       deleteIcon.setAttribute('alt', 'delete icon');
       deleteIcon.dataset.icon = 'delete-icon';
   

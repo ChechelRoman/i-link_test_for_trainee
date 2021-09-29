@@ -11,7 +11,7 @@ const renderInitialSelect = (container) => {
 
   const dropdownArrow = document.createElement('img');
   dropdownArrow.classList.add('custom__select','dropdown__arrow-down');
-  dropdownArrow.setAttribute('src', '/images/dropdown-arrow.svg');
+  dropdownArrow.setAttribute('src', './images/dropdown-arrow.svg');
   dropdownArrow.setAttribute('alt', 'dropdown arrow');
 
   container.replaceChildren(labelForButton,dropdownArrow, initialButton);
